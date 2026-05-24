@@ -8,13 +8,14 @@
 <body>
     <h1>Flowise Chat</h1>
 <!-- Replace below with the code from your Flowise chatbot -->
-    <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-        Chatbot.init({
-            chatflowid: "56c98591-6ce2-4e18-9661-905a9ab02e3d",
-            apiHost: "https://cloud.flowiseai.com",
-        })
-    </script>
+<flowise-fullchatbot></flowise-fullchatbot>
+<script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.initFull({
+        chatflowid: "56c98591-6ce2-4e18-9661-905a9ab02e3d",
+        apiHost: "https://cloud.flowiseai.com",
+    })
+</script>
 <!-- Replace above with the code from your Flowise chatbot -->
 </body>
 </html>
